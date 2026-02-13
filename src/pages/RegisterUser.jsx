@@ -31,9 +31,7 @@ function RegisterUser() {
     try {
       setLoading(true);
 
-      const res = await axios.post("/market-mate/user/register", form, {
-        withCredentials: true,
-      });
+      const res = await axios.post("/market-mate/user/register", form);
 
       // assume backend returns { success: true }
       if (res.data?.success) {
