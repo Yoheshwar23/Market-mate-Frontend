@@ -81,7 +81,7 @@ function ProductDetails() {
 
   if (loading) {
     return (
-      <main className="min-h-screen bg-black text-white flex flex-col">
+      <main className="min-h-screen bg-black text-white flex flex-col p-2">
         <Header />
         {/* Product Section Skeleton */}
         <section className="w-full mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl">
