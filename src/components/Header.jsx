@@ -75,7 +75,7 @@ function Header() {
               onChange={(e) => setQuery(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && handleSearch()}
               placeholder="Search products..."
-              className="w-full pl-10 pr-4 py-2.5 rounded-full bg-white/10 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full text-xs md:text-md pl-10 pr-4 py-2.5 rounded-full bg-white/10 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
         </div>
