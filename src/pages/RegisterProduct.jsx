@@ -293,13 +293,19 @@ function RegisterProduct() {
                 <label className="text-xs uppercase tracking-[0.18em] text-white/60 block">
                   Target Audience
                 </label>
-                <input
+                 <select
                   name="target"
                   value={form.target}
                   onChange={handleChange}
-                  className="w-full bg-black border border-white/15 rounded-lg px-4 py-2.5 text-sm text-white placeholder:text-white/25 focus:outline-none focus:border-white focus:ring-1 focus:ring-white/70 transition"
-                  placeholder="Men / Women / Kids / family"
-                />
+                  className="w-full bg-black border border-white/15 pr-4 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-white focus:ring-1 focus:ring-white/70 transition"
+                  required
+                >
+                  <option value="">Select target</option>
+                  <option value="men">Men</option>
+                  <option value="women">Women</option>
+                  <option value="kids">Kids</option>
+                  <option value="family">Family</option>
+                </select>
               </div>
             </div>
 
