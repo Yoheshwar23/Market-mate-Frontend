@@ -83,7 +83,7 @@ function SearchResult() {
 
   if (loading) {
     return (
-      <main className="w-full min-h-screen bg-black text-white flex flex-col">
+      <main className="p-2 w-full min-h-screen bg-black text-white flex flex-col">
         <Header />
 
         <section className="flex-1 max-w-7xl mx-auto p-4 md:p-6">
