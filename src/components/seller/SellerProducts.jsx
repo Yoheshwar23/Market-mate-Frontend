@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../../utils/axiosInstance";
 import React, { useEffect, useState, useCallback, useRef } from "react";
 import { Search, Edit2, Trash2 } from "lucide-react";
 import { useNavigate } from "react-router";
