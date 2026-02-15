@@ -37,7 +37,7 @@ function App() {
           <Route path="register" element={<RegisterUser />} />
           <Route path="login" element={<Login />} />
 
-          <Route element={<IsAuthenticated Role="user" />}>
+        <Route element={<IsAuthenticated Role={["user"]} />}>
             <Route path="home" element={<Home />} />
             <Route path="account" element={<UserAccount />} />
             <Route path="search" element={<SearchResult />} />
@@ -65,7 +65,7 @@ function App() {
             />
           </Route>
 
-          <Route element={<IsAuthenticated Role="admin" />}>
+          <Route element={<IsAuthenticated Role={["admin"]} />}>
             <Route path="admin/description" element={<AdminDescription />} />
             <Route path="admin/dashboard" element={<AdminDashboard />} />
             <Route path="admin/account" element={<Account />} />
