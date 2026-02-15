@@ -66,7 +66,7 @@ function App() {
             />
           </Route>
 
-          <Route element={<IsAuthenticated Role={["admin"]} />}>
+          <Route element={<IsAuthenticated Role={"admin"} />}>
             <Route path="admin/description" element={<AdminDescription />} />
             <Route path="admin/dashboard" element={<AdminDashboard />} />
             <Route path="admin/account" element={<Account />} />
