@@ -18,9 +18,7 @@ function AdminOrders() {
   const fetchUserOrders = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`/market-mate/user/admin/orders/${id}`, {
-        withCredentials: true,
-      });
+      const res = await axios.get(`/market-mate/user/admin/orders/${id}`);
       setOrders(res.data.orders || []);
     } catch (error) {
       setError("Failed to fetch user orders");
