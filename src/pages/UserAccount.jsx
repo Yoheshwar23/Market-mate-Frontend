@@ -27,6 +27,7 @@ function UserAccount() {
       setLoading(true);
       const res = await axios.get("/market-mate/user/account");
       setUser(res.data.user);
+      console.log(user);
       setFormData({
         name: res.data.user.name || "",
         email: res.data.user.email || "",
