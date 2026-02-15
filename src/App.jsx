@@ -36,9 +36,10 @@ function App() {
           {/* OPTIONAL: explicit login path */}
           <Route path="register" element={<RegisterUser />} />
           <Route path="login" element={<Login />} />
+            <Route path="home" element={<Home />} />
 
         <Route element={<IsAuthenticated Role={["user"]} />}>
-            <Route path="home" element={<Home />} />
+          
             <Route path="account" element={<UserAccount />} />
             <Route path="search" element={<SearchResult />} />
             <Route path="user/wishlist" element={<WishListPage />} />
