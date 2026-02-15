@@ -15,9 +15,7 @@ function Account() {
   const fetchUserProfile = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`/market-mate/user/account`, {
-        withCredentials: true,
-      });
+      const res = await axios.get(`/market-mate/user/account`);
       setUser(res.data.user);
     } catch (error) {
       setError("Failed to fetch profile");
