@@ -1,1 +1,1 @@
-export const BASE_URL = "https://market-mate-backend-5qef.onrender.com";
+export const BASE_URL = "https://market-mate-backend-lfkj.onrender.com";
