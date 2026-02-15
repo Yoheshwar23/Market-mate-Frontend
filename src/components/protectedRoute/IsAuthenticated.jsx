@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "../../utils/axiosInstance";
-import { Outlet, Navigate } from "react-router";
+import { Outlet, Navigate } from "react-router-dom";
 
 function IsAuthenticated({ Role }) {
   const [loading, setLoading] = useState(true);
