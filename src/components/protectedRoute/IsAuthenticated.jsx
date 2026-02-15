@@ -10,7 +10,7 @@ function IsAuthenticated({ Role }) {
   useEffect(() => {
     const isAuth = async () => {
       try {
-        const res = await axios.get("/user/myaccount");
+        const res = await axios.get("/market-mate/user/myaccount");
         const { role } = res.data.user || res.data;  // Match your controller response
 
         setAuthorized(Role ? Role.includes(role) : true);
