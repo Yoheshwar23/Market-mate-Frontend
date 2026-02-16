@@ -306,17 +306,7 @@ function OrderSummary() {
                       <div>Card</div>
                     </label>
 
-                    <label className="flex items-center gap-2 p-2 bg-black/20 rounded-lg cursor-pointer hover:bg-white/5 text-xs">
-                      <input
-                        type="radio"
-                        name="payment"
-                        value="upi"
-                        checked={paymentMethod === "upi"}
-                        onChange={(e) => setPaymentMethod(e.target.value)}
-                        className="w-4 h-4 text-emerald-400"
-                      />
-                      <div>UPI</div>
-                    </label>
+                    
                   </div>
 
                   <button
@@ -362,23 +352,7 @@ function OrderSummary() {
                     </div>
                   )}
 
-                  {paymentMethod === "upi" && (
-                    <div className="space-y-2 text-xs">
-                      <input
-                        className="w-full bg-black/50 border border-white/20 rounded-xl px-3 py-3 text-sm"
-                        placeholder="user@paytm"
-                      />
-                      <div className="grid grid-cols-2 gap-2">
-                        <select className="bg-black/50 border border-white/20 rounded-xl px-2 py-2 text-sm">
-                          <option>Google Pay</option>
-                          <option>PhonePe</option>
-                        </select>
-                        <div className="bg-green-500/20 text-green-400 px-2 py-2 rounded-xl font-bold flex items-center gap-1 text-xs">
-                          ✓ Valid
-                        </div>
-                      </div>
-                    </div>
-                  )}
+                 
 
                   <button
                     onClick={handlePlaceOrder}
@@ -400,7 +374,7 @@ function OrderSummary() {
                 </div>
               )}
 
-              /* {paymentMethod === "cod" && !showPaymentForm && (
+               {paymentMethod === "cod" && !showPaymentForm && (
                 <div className="bg-emerald-500/10 border-2 border-emerald-400/30 rounded-2xl p-4 text-center text-xs">
                   <Truck className="w-8 h-8 text-emerald-400 mx-auto mb-2" />
                   <h4 className="font-bold text-emerald-400">
@@ -410,7 +384,7 @@ function OrderSummary() {
                     Pay ₹{calculatedFinalTotal.toLocaleString()}
                   </p>
                 </div>
-              )} */
+              )} 
             </div>
           </div>
         </section>
