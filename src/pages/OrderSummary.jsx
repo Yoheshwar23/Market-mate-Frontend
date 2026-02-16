@@ -400,7 +400,7 @@ function OrderSummary() {
                 </div>
               )}
 
-              {paymentMethod === "cod" && !showPaymentForm && (
+              /* {paymentMethod === "cod" && !showPaymentForm && (
                 <div className="bg-emerald-500/10 border-2 border-emerald-400/30 rounded-2xl p-4 text-center text-xs">
                   <Truck className="w-8 h-8 text-emerald-400 mx-auto mb-2" />
                   <h4 className="font-bold text-emerald-400">
@@ -410,7 +410,7 @@ function OrderSummary() {
                     Pay ₹{calculatedFinalTotal.toLocaleString()}
                   </p>
                 </div>
-              )}
+              )} */
             </div>
           </div>
         </section>
