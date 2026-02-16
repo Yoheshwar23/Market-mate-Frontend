@@ -25,7 +25,9 @@ function UserAccount() {
   const fetchUserProfile = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("/market-mate/user/account");
+      const res = await axios.get("/market-mate/user/account", {
+         withCredentials: true,
+      });
       setUser(res.data.user);
       setFormData({
         name: res.data.user.name || "",
