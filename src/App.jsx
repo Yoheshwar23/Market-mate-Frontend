@@ -23,7 +23,7 @@ import Account from "./components/admin/Account";
 import UpdateAccount from "./components/admin/UpdateAccount";
 import ProductsPage from "./components/admin/ProductsPage";
 import AdminOrders from "./components/admin/AdminOrders";
-import IsAuthenticated from "./components/protectedRoute/IsAuthenticated";
+// import IsAuthenticated from "./components/protectedRoute/IsAuthenticated";
 
 function App() {
   return (
@@ -36,8 +36,6 @@ function App() {
           {/* OPTIONAL: explicit login path */}
           <Route path="register" element={<RegisterUser />} />
           <Route path="login" element={<Login />} />
-
-        <Route element={<IsAuthenticated Role={"user"} />}>
           
             <Route path="home" element={<Home />} />
             <Route path="account" element={<UserAccount />} />
@@ -64,16 +62,16 @@ function App() {
               path="seller/product/update/:id"
               element={<UpdateProduct />}
             />
-          </Route>
+         
 
-          <Route element={<IsAuthenticated Role={"admin"} />}>
+          
             <Route path="admin/description" element={<AdminDescription />} />
             <Route path="admin/dashboard" element={<AdminDashboard />} />
             <Route path="admin/account" element={<Account />} />
             <Route path="admin/account/update" element={<UpdateAccount />} />
             <Route path="admin/products" element={<ProductsPage />} />
             <Route path="admin/users/:id/orders" element={<AdminOrders />} />
-          </Route>
+         
         </Route>
 
         {/* OPTIONAL ROOT REDIRECT */}
